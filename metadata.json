@@ -1,0 +1,5 @@
+{
+  "name": "My Todos App",
+  "description": "A stylish and modern to-do list application to help you organize your life. This app allows you to manage tasks, assign priorities and projects, and filter your to-dos with a clean and intuitive interface.",
+  "requestFramePermissions": []
+}
