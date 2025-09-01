@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker-compose up:*)",
+      "Bash(docker-compose exec app npm install:*)",
+      "Bash(docker-compose exec:*)",
+      "Bash(docker-compose:*)",
+      "Read(c:\\Users\\jrait\\Pictures\\Screenshots/**)",
+      "Read(c:\\Users\\jrait\\Pictures\\Screenshots/**)",
+      "Read(c:\\Users\\jrait\\Pictures\\Screenshots/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

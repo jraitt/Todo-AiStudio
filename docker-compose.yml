@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: todo-app-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      # Mount source code for hot reload
+      - .:/app
+      # Use anonymous volume for node_modules to prevent host override
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+  # Production service (commented out by default)
+  # app-prod:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: production
+  #   container_name: todo-app-prod
+  #   ports:
+  #     - "80:80"
+  #   environment:
+  #     - NODE_ENV=production
+  #   env_file:
+  #     - .env
+  #   restart: unless-stopped

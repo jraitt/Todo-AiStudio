@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="text-center">
+    <header className="text-center py-4">
       <div className="flex justify-center items-center gap-4">
         <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-blue-300 flex items-center justify-center shadow-lg">
           <div className="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center">
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
             </div>
           </div>
         </div>
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text leading-tight mb-2">
           My Todos
         </h1>
         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-300 to-cyan-300 flex items-center justify-center shadow-lg">
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             </svg>
         </div>
       </div>
-      <p className="mt-2 text-gray-500 text-lg">
+      <p className="mt-6 text-gray-500 text-lg">
         Organize your life with style ✨
       </p>
     </header>

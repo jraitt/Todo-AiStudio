@@ -12,7 +12,7 @@ export interface Project {
 }
 
 export interface Todo {
-  id: number;
+  id: string;
   text: string;
   completed: boolean;
   priority: Priority;
